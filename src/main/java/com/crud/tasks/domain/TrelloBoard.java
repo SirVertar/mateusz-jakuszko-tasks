@@ -1,18 +1,16 @@
 package com.crud.tasks.domain;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-public class TrelloCardDto {
-
+public class TrelloBoard {
     private String name;
-    private String description;
-    private String pos;
-    private String listId;
+    private String id;
+    private List<TrelloList> lists;
 }

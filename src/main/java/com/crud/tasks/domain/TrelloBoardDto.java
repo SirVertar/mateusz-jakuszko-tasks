@@ -21,9 +21,5 @@ public class TrelloBoardDto {
     private String name;
 
     @JsonProperty("lists")
-    private List<TrelloBoardDto> lists;
-
-    @JsonProperty("closed")
-    private boolean isClosed;
-
+    private List<TrelloListDto> lists;
 }
