@@ -40,8 +40,8 @@ public class TrelloMapperTestSuite {
 
         //Then
         assertEquals(2, trelloBoardDtoList.size());
-        assertEquals("BoardId1", trelloBoardDtoList.get(0).getId());
-        assertEquals("BoardId2", trelloBoardDtoList.get(1).getId());
+        assertEquals("TestBoard1", trelloBoardDtoList.get(0).getId());
+        assertEquals("TestBoard2", trelloBoardDtoList.get(1).getId());
         assertEquals("1", trelloBoardDtoList.get(0).getLists().get(0).getId());
         assertEquals("2", trelloBoardDtoList.get(0).getLists().get(1).getId());
         assertEquals("3", trelloBoardDtoList.get(0).getLists().get(2).getId());
@@ -109,8 +109,8 @@ public class TrelloMapperTestSuite {
 
         //Then
         assertEquals(2, trelloBoardList.size());
-        assertEquals("BoardId1", trelloBoardList.get(0).getId());
-        assertEquals("BoardId2", trelloBoardList.get(1).getId());
+        assertEquals("TestBoard1", trelloBoardList.get(0).getId());
+        assertEquals("TestBoard2", trelloBoardList.get(1).getId());
         assertEquals("1", trelloBoardList.get(0).getLists().get(0).getId());
         assertEquals("2", trelloBoardList.get(0).getLists().get(1).getId());
         assertEquals("3", trelloBoardList.get(0).getLists().get(2).getId());

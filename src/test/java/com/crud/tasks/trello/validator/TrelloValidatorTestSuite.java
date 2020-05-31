@@ -27,11 +27,11 @@ public class TrelloValidatorTestSuite {
         List<TrelloList> TrelloLists1 = new ArrayList<>();
         TrelloLists1.add(new TrelloList("1", "test_list", false));
         List<TrelloList> TrelloLists2 = new ArrayList<>();
-        TrelloLists1.add(new TrelloList("2", "normal_list", false));
+        TrelloLists2.add(new TrelloList("2", "normal_list", false));
 
         List<TrelloBoard> trelloBoards1 = new ArrayList<>();
-        trelloBoards1.add(new TrelloBoard("test", "1", TrelloLists1));
-        trelloBoards1.add(new TrelloBoard("normal", "2", TrelloLists2));
+        trelloBoards1.add(new TrelloBoard("1", "test", TrelloLists1));
+        trelloBoards1.add(new TrelloBoard("2", "normal", TrelloLists2));
 
         //When
         List<TrelloBoard> filteredTrelloBoards = trelloValidator.validateTrelloBoards(trelloBoards1);
