@@ -22,7 +22,7 @@ public class EmailScheduler {
     @Autowired
     private AdminConfig adminConfig;
 
-    @Scheduled(fixedDelay = 10000)
+    @Scheduled(fixedDelay = 100000)
     public void sendInformationEmail() {
         long size = taskRepository.count();
         if (size == 1) {

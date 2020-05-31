@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TrelloBoard {
-    private String name;
     private String id;
+    private String name;
     private List<TrelloList> lists;
 }
